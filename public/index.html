@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="min-h-screen min-w-full font-body text-sm md:bg-v-l-grayish-blue">
+    <main class="w-[95%] mx-auto max-w-3xl bg-white md:px-8 md:my-12 md:rounded-2xl">
+      <div class="py-4 flex">
+        <h1 class="font-extrabold text-xl">
+          Notifications
+          <span
+            data-id="notification-count"
+            class="text-white px-3 py-[0.15rem] bg-blue font-normal text-base rounded-md"
+            >3</span
+          >
+        </h1>
+        <button class="ml-auto hover:text-blue" data-id="button">Mark all as read</button>
+      </div>
+      <div class="notifications">
+        <div class="notification notification--unread" data-id="notification">
+          <img
+            src="images/avatar-mark-webber.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Mark Webber </a
+            ><span class="notification__text">reacted to your recent post </span
+            ><a href="#" class="notification__post">My first tournament today! </a
+            ><span class="notification__dot" data-id="dot"></span>
+            <p class="notification__time">1m ago</p>
+          </div>
+        </div>
+        <div class="notification notification--unread" data-id="notification">
+          <img
+            src="images/avatar-angela-gray.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Angela Gray </a
+            ><span class="notification__text">followed you </span
+            ><span class="notification__dot" data-id="dot"></span>
+            <p class="notification__time">5m ago</p>
+          </div>
+        </div>
+        <div class="notification notification--unread" data-id="notification">
+          <img
+            src="images/avatar-jacob-thompson.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Jacob Thompson </a
+            ><span class="notification__text">has joined your group </span
+            ><a href="#" class="notification__group">Chess Club </a
+            ><span class="notification__dot" data-id="dot"></span>
+            <p class="notification__time">1 day ago</p>
+          </div>
+        </div>
+        <div class="notification">
+          <img
+            src="images/avatar-rizky-hasanuddin.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Rizky Hasanuddin </a
+            ><span class="notification__text">sent you a private message</span>
+            <p class="notification__time">5 days ago</p>
+            <button class="notification__message">
+              Hello, thanks for setting up the Chess Club. I've been a member for
+              a few weeks now and I'm already having lots of fun and improving my
+              game.
+            </button>
+          </div>
+        </div>
+        <div class="notification">
+          <img
+            src="images/avatar-kimberly-smith.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Kimberly Smith </a
+            ><span class="notification__text">commented on your picture </span
+            ><p class="notification__time">1 week ago</p>
+          </div>
+          <a href="#"><img
+              src="images/image-chess.webp"
+              alt="Picture"
+              class="notification__picture w-16"
+            /></a>
+        </div>
+        <div class="notification">
+          <img
+            src="images/avatar-nathan-peterson.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Nathan Peterson </a
+            ><span class="notification__text">reacted to your recent post </span
+            ><a href="#" class="notification__post"
+              >5 end-game strategies to increase your win rate</a
+            >
+            <p class="notification__time">2 week ago</p>
+          </div>
+        </div>
+        <div class="notification">
+          <img
+            src="images/avatar-anna-kim.webp"
+            alt="Avatar"
+            class="notification__avatar"
+          />
+          <div class="notification__info">
+            <a href="#" class="notification__name">Anna Kim </a
+            ><span class="notification__text">left the group </span
+            ><a href="#" class="notification__group">Chess Club</a>
+            <p class="notification__time">2 week ago</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="text-xs text-center">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-red"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://frontendmentor.io/profile/yaikarace" class="text-red"
+        >Yahir (Yaika Race)</a
+      >.
+    </div>
+  </body>
+</html>

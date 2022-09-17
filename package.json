@@ -1,0 +1,18 @@
+{
+	"name": "notifications-page",
+	"version": "1.0.0",
+	"description": "a challenge from frontend mentor",
+	"main": "index.js",
+	"scripts": {
+		"build-css": "postcss ./src/input.css -o ./public/css/styles.css",
+		"watch": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch"
+	},
+	"author": "Yaika Race",
+	"license": "GPL-3.0",
+	"prettier": "prettier-config-standard",
+	"devDependencies": {
+		"autoprefixer": "^10.4.11",
+		"postcss-cli": "^10.0.0",
+		"tailwindcss": "^3.1.8"
+	}
+}

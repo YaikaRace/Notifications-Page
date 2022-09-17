@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notification{
+	@apply flex my-4 p-4 rounded-lg w-full;
+}
+.notification__info{
+	@apply w-full;
+}
+.notification--unread{
+	@apply bg-l-grayish-blue-1;
+}
+.notification__avatar{
+	@apply w-12 h-12 mr-4;
+}
+.notification__name{
+	@apply font-bold text-v-d-blue;
+}
+.notification__name:hover{
+	@apply font-bold text-blue;
+}
+.notification__text{
+	@apply text-d-grayish-blue;
+}
+.notification__post, .notification__group{
+	@apply text-d-grayish-blue font-bold;
+}
+.notification__post:hover, .notification__group:hover{
+	@apply text-blue font-bold;
+}
+.notification__message{
+	@apply p-4 border-l-grayish-blue-2 border-[1px] text-d-grayish-blue text-left cursor-pointer;
+}
+.notification__message:hover{
+	@apply bg-l-grayish-blue-2;
+}
+.notification__time{
+	@apply text-grayish-blue;
+}
+.notification__dot{
+	@apply border-red border-4 rounded-full w-1 h-1 absolute translate-y-1 translate-x-1;
+}
+.dot-hide{
+	@apply hidden;
+}
